@@ -1,0 +1,26 @@
+{
+  "name": "cheatsheet.js",
+  "version": "0.0.1",
+  "description": "A cheat sheet rendering library",
+  "main": "compile.js",
+  "private": "true",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sugendran/cheatsheet.js.git"
+  },
+  "author": "Sugendran Ganess",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "0ecf8e4f5bf18dc0a3f7b431f0fda22ac1546435",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jasmine": "~0.4.2",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-sass": "~0.3.0"
+  }
+}
