@@ -1,0 +1,10 @@
+doctype 5
+html(lang="en")
+  head
+    title cheatsheet.js
+  body
+    h1 BOOM
+    ul
+      each sheet, sheetname in cheatsheets
+        li
+          a(href="#{sheet.slug}.html")= sheetname

@@ -29,3 +29,6 @@ Icon
 .Spotlight-V100
 .Trashes
 
+build
+deploy.sh
+

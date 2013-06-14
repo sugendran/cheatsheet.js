@@ -1,0 +1,97 @@
+
+.cs-container {
+  font-family: sans-serif;
+  margin: 0px auto 20px;
+  padding: 20px;
+  border: 1px solid #CCC;
+  background: #0B61A4;
+  border-radius: 8px;
+  position: relative;
+}
+.cs-container a {
+  color: #0B61A4;
+}
+.cs-title { 
+  font-weight: bold;
+  margin: 0.8em 0 0.2em;
+  font-size: 1.1em;
+}
+.cs-description { 
+  font-style: italic;
+  margin: 0.2em 0 0.4em 0.2em;
+}
+.cs-section {
+  width: 450px;
+  border: 6px solid #FFC373;
+  border-radius: 12px;
+  background: #FFC373;
+  font-size: 0.9em;
+  display: inline-block;
+  margin: 20px 10px 0px 10px;
+  vertical-align: top;
+}
+.cs-section-inner {
+  width: 430px;
+  border: 2px solid #FF9200;
+  background: #FFF;
+  border-radius: 8px;
+  padding: 8px;
+}
+.cs-header {
+  display: block;
+  color: #FFF;
+  font-size: 130%;
+}
+.cs-header .cs-title {
+  font-size: 130%;
+  margin: 0px 0px 18px;
+}
+.cs-header .cs-description {
+  margin: 0px;
+}
+.cs-section-header {
+  display: block;
+  color: #000;
+}
+.cs-item {
+  display: block;
+  clear: both;
+  padding: 10px 0px 8px;
+  border-bottom: 1px dotted #EEE;
+  font-size: 0.8em;
+}
+.cs-item:hover {
+  background: #EEE;
+}
+.cs-item .cs-title {
+  float: left;
+  margin: 0px;
+  color: #333;
+  padding-right: 8px;
+}
+.cs-item .cs-description,
+.cs-item .cs-link,
+.cs-item .cs-param {
+  padding-left: 136px;
+  margin: 0px;
+}
+.cs-param-name {
+  display: block;
+  font-weight: bold;
+}
+.cs-param-desc {
+  display: block;
+  margin: 0px;
+  font-style: italic;
+}
+.cs-search {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.cs-search-input {
+  font-size: 1.3em;
+  padding: 0.2em;
+  border-radius: 8px;
+  border: 1px solid #999;
+}

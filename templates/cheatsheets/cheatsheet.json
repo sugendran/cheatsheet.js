@@ -1,0 +1,80 @@
+{
+  "title": "cheatsheet.js API",
+  "description": "API for the cheatsheet library.",
+  "sections": [
+    {
+      "title": "CheatSheet",
+      "description": "The main object for creating the cheatsheet.",
+      "items": [
+        {
+          "title": "new CheatSheet(config)",
+          "description": "Create a new CheatSheet object",
+          "params": [
+            {
+              "name": "config",
+              "type": "Object",
+              "description": "The configuration object for this cheat sheet."
+            }
+          ]
+        },
+        {
+          "title": ".render(element)",
+          "description": "Render the cheatsheet",
+          "params": [
+            {
+              "name": "element",
+              "type": "DOMElement",
+              "description": "The DOM element in which the cheatsheet should get rendered into"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CheatSheet.Section",
+      "description": "A section within the cheatsheet. This should be a conceptual section.",
+      "items": [
+        {
+          "title": "ctor",
+          "link": "http://foo.com"
+        },
+        {
+          "title": ".headerHTML()",
+          "description": "Returns the HTML text for the header of a section"
+        },
+        {
+          "title": ".contentHTML()",
+          "description": "Returns the HTML text for the inner content of the section"
+        },
+        {
+          "title": ".footerHTML()",
+          "description": "Returns the HTML text for the footer of a section",
+          "link": "http://foo.com"
+        }
+      ]
+    },
+    {
+      "title": "CheatSheet.Item",
+      "description": "A line item within a section",
+      "items": [
+        {
+          "title": "ctor",
+          "link": "http://foo.com"
+        },
+        {
+          "title": ".headerHTML()",
+          "description": "Returns the HTML text for the header of the item"
+        },
+        {
+          "title": ".contentHTML()",
+          "description": "Returns the HTML text for the inner content of item"
+        },
+        {
+          "title": ".footerHTML()",
+          "description": "Returns the HTML text for the footer of the item",
+          "link": "http://foo.com"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+doctype 5
+html(lang="en")
+  head
+    title= info.title
+    link(href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css", rel="stylesheet", media="all")
+    script(type="text/javascript", src="lib/cheatsheet-#{version}.min.js")
+    link(rel="stylesheet", href="lib/cheatsheet-#{version}.css")
+    style
+      body {
+        background: #DDD;
+        padding: 20px 0px;
+      }
+  body
+    div#target
+    script
+      var config = !{JSON.stringify(info)};
+      var cheatSheet = new CheatSheet(config);
+      cheatSheet.render(document.getElementById("target"));
