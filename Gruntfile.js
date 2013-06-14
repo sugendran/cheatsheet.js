@@ -59,13 +59,17 @@ module.exports = function(grunt) {
       options: {
         key: process.env.AWS_S3_KEY,
         secret: process.env.AWS_S3_SECRET,
-        bucket: 'cheatsheetjs.com',
-        access: 'public-read'
+        bucket: 'www.cheatsheetjs.com',
+        access: 'public-read',
+        region: 'us-west-1'
       },
       all: {
         upload: [{
-          src: 'build/**/*',
-          dest: '/'
+          src: 'build/*',
+          dest: ''
+        },{
+          src: 'build/lib/*',
+          dest: 'lib/'
         }]
       }
     }
@@ -102,6 +106,6 @@ module.exports = function(grunt) {
   // Default task(s).
   grunt.registerTask('default', ['clean', 'jasmine', 'concat', 'uglify', 'jade']);
   grunt.registerTask('test', ['jasmine']);
-  grunt.registerTask('deploy', ['default', 'bump']);
+  grunt.registerTask('deploy', ['default', 's3', 'bump']);
 
 };

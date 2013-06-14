@@ -67,7 +67,6 @@
 		} else {
 			this.hide();
 		}
-		console.log(matched);
 		return matched;
 	};
 
