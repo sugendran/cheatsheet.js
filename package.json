@@ -1,6 +1,6 @@
 {
   "name": "cheatsheet.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A cheat sheet rendering library",
   "main": "compile.js",
   "private": "true",
@@ -25,6 +25,7 @@
     "grunt-s3": "~0.2.0-alpha.2",
     "grunt-contrib-clean": "~0.4.1",
     "grunt-bump": "0.0.2",
-    "grunt-contrib-jade": "~0.7.0"
+    "grunt-contrib-jade": "~0.7.0",
+    "grunt-git": "0.0.1"
   }
 }
