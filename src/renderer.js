@@ -15,6 +15,19 @@
 		html.push(this.footerHTML());
 		element.innerHTML = html.join("");
 		this.afterRender();
+
+		var search = element.querySelector('.cs-search');
+		if(search) {
+			var sheet = this;
+			var onKeyUp = function(e) {
+				sheet.filter(e.target.value);
+			};
+			if (search.addEventListener) {
+				search.addEventListener('keyup', onKeyUp, false);
+			} else if (search.attachEvent) {
+				search.attachEvent('keyup', onKeyUp);
+			}
+		}
 	};
 	CheatSheet.prototype.headerHTML = function() {
 		var width = window.innerWidth || document.documentElement.clientWidth;
@@ -27,7 +40,7 @@
 		if(domAvailable) {
 			html.splice(7, 0,
 					'<div class="cs-search">',
-						'<input type="text" value="" placeholder="Filter" class="cs-search-input" onKeyUp="', this.keyup,'" />',
+						'<input type="text" value="" placeholder="Filter" class="cs-search-input" />',
 					'</div>');
 		}
 		if(this.description) {

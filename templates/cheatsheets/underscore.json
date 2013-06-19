@@ -1,10 +1,10 @@
 {
   "title": "underscore.js",
-  "description": "Sample cheatsheet with the API for the library.",
+  "description": "Cheatsheet for the <a href=\"http://underscorejs.org/\">underscore.js</a> library. All the content is taken from the underscore website and was provided under their <a href=\"https://github.com/documentcloud/underscore/blob/master/LICENSE\">licence</a>.",
   "sections": [
     {
       "title": "Collections",
-      "description": "Arrays or Objects",
+      "description": "Applies to Arrays and Objects",
       "items": [
         {
           "title": "each",
@@ -276,7 +276,6 @@
     },
     {
       "title": "Functions",
-      "description": "Functions",
       "items": [
         {
           "title": "bind",
