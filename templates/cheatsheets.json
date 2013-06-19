@@ -2,5 +2,9 @@
 	"cheatsheet.js": {
 		"info": "templates/cheatsheets/cheatsheet.json",
 		"slug": "cheatsheet.js"
+	}, 
+	"underscore.js": {
+		"info": "templates/cheatsheets/underscore.json",
+		"slug": "underscore.js"
 	}
 }
