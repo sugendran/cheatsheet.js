@@ -47,7 +47,8 @@ module.exports = function(grunt) {
       index: {
         options: {
           data: {
-            cheatsheets: cheatsheets
+            cheatsheets: cheatsheets,
+            version: '<%= pkg.version %>'
           }
         },
         files: {

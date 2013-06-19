@@ -10,9 +10,15 @@ html(lang="en")
         background: #DDD;
         padding: 20px 0px;
       }
+      footer {
+        text-align: center;
+        font-size: 80%;
+      }
   body
     div#target
     script
       var config = !{JSON.stringify(info)};
       var cheatSheet = new CheatSheet(config);
       cheatSheet.render(document.getElementById("target"));
+    footer
+      p Generated using <a href="http://www.cheatsheetjs.com/">cheatsheet.js</a>

@@ -2,9 +2,39 @@ doctype 5
 html(lang="en")
   head
     title cheatsheet.js
+    link(href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css", rel="stylesheet", media="all")
+    style
+        html {
+            background: #DDD;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0px auto;
+        }
   body
-    h1 BOOM
-    ul
-      each sheet, sheetname in cheatsheets
-        li
-          a(href="#{sheet.slug}.html")= sheetname
+    div.container
+        h1 cheatsheet.js
+
+        p The cheat sheet is rendered from a JSON object that contains sections, each section contains line items. The steps for rendering the cheat sheet is:
+        ul
+            li
+                p Create a cheat sheet from the config 
+                pre var sheet = new CheatSheet(config);
+            li
+                p Call the render method to render the cheat sheet in an element
+                pre sheet.render(element);
+
+        h3 More info can be found on github
+        a(href="https://github.com/sugendran/cheatsheet.js") https://github.com/sugendran/cheatsheet.js
+
+        h3 Current version: #{version}
+        p
+            a(href="lib/cheatsheet-#{version}.min.js") cheatsheet-#{version}.min.js
+        p
+            a(href="lib/cheatsheet-#{version}.css") cheatsheet-#{version}.css
+
+        h3 Sample Cheat Sheets
+        ul
+          each sheet, sheetname in cheatsheets
+            li
+              a(href="#{sheet.slug}.html")= sheetname
