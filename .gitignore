@@ -31,4 +31,4 @@ Icon
 
 build
 deploy.sh
-
+s3fix.py
