@@ -73,6 +73,17 @@ module.exports = function(grunt) {
           dest: 'lib/'
         }]
       }
+    },
+    git: {
+        task: {
+            options: {
+                command: 'commit',
+                message: 'Bumped the package.json after a deploy'
+            },
+            files: {
+                src: ['package.json']
+            }
+        }
     }
   };
   // add a config for every template
@@ -103,10 +114,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-bump');
   grunt.loadNpmTasks('grunt-s3');
+  grunt.loadNpmTasks('grunt-git');
+
 
   // Default task(s).
   grunt.registerTask('default', ['clean', 'jasmine', 'concat', 'uglify', 'jade']);
   grunt.registerTask('test', ['jasmine']);
-  grunt.registerTask('deploy', ['default', 's3', 'bump']);
+  grunt.registerTask('deploy', ['default', 's3', 'bump', 'git']);
 
 };
