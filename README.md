@@ -15,7 +15,7 @@ section contains line items. The steps for rendering the cheat sheet is:
   * Call the render method to render the cheat sheet in an element
   	 `sheet.render(element);`
 
-The default stylesheet can be found in (templates/default.css)[templates/default.css]
+The default stylesheet can be found in [templates/default.css](templates/default.css)
 
 
 Developing:
@@ -24,4 +24,12 @@ Developing:
   * `npm install` will install the toolchain which is gruntjs
   * `grunt watch` should be run in the terminal to have tests run as files are saved
   * `grunt` will perform all the actions and build the test sheets
-  
+
+
+TODO:
+-----
+
+ * Test in something other than Chrome
+ * Make cheatsheets for other libs
+ * Create a downloadable package
+ * Style up that index.html page
